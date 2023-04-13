@@ -43,7 +43,7 @@ data %>%
     floor()
 }
 
-# A function to render the churn rat plot under the "Know Thy Customer" tab 
+# A function to render the churn rate plot under the "Know Thy Customer" tab 
 render_home_plot <- function(gender, region) {
   temp <- data %>%
     filter(
@@ -306,8 +306,6 @@ render_prod_chart <- function(pid, gender, region, country, wealth_slider) {
 }
 
 # A function to render the map under the "Jet Around the Globe" tab
-# Ref: https://stackoverflow.com/questions/60317293/add-markers-by-country-name-leaflet-r
-# Ref: https://stackoverflow.com/questions/54978367/custom-markers-with-different-shapes-and-colors-in-leaflet-r
 render_map <- function() {
   # This is done to give the markers varying sizes based on the number of customers.
   # The different svgs are to make sure the border weight stays the same for all marker sizes.
