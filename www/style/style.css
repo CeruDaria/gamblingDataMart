@@ -1,0 +1,448 @@
+@import url('https://fonts.googleapis.com/css?family=Courier+Prime');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+
+body {
+  background-color: #F8F8F8;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: 'Ubuntu';
+  color: #605A52;
+  font-size: 12px;
+  text-align: center;
+}
+
+.suits {
+  width: 48px;
+  height: 48px;
+}
+
+.top-bar-icons {
+  display: flex;
+  padding: 0 40%;
+  margin: 0 auto;
+}
+
+.top-bar-icons div{
+  width: 50px;
+  cursor: pointer;
+  flex-grow: 1;
+}
+
+.top-bar-text {
+  visibility: hidden;
+  overflow: visible;
+  font-family: 'Courier Prime';
+  font-weight: 400;
+  height: 32px;
+}
+
+div.top-bar-icons div:hover > .top-bar-text {
+  visibility: visible;
+}
+
+.main-panel {
+  width: 1300px;
+  padding: 0 128px;
+}
+
+h1 {
+  font-family: 'Courier Prime';
+  font-weight: 700;
+  font-size: 64px;
+  margin: 0;
+  color: #54514E;
+}
+
+.content {
+  display: flex;
+}
+
+.left-wrapper {
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-wrapper {
+  width: 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-rank {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 64px;
+  color: #54514E;
+  margin: 0;
+}
+
+.borders {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+}
+
+.borders div {
+  width: 50%;
+}
+
+.left-border {
+  width: 50%;
+  border-width: 0px 0px 2px 2px;
+  border-style: solid;
+  border-radius: 0px 25px;
+}
+
+.right-border {
+  width: 50%;
+  border-width: 2px 2px 0px 0px;
+  border-style: solid;
+  border-radius: 0px 25px;
+}
+
+.heart {
+  border-color: #EE6F7E;
+}
+
+.diamond {
+  border-color: #40B2EC;
+}
+
+.club {
+  border-color: #4BC2B0;
+}
+
+.spade {
+  border-color: #EDAF4F;
+}
+
+.rank-suit {
+  height: 108px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+}
+
+.flipped {
+  transform: rotate(180deg);
+  margin-top: 32px;
+  margin-bottom: 0;
+}
+
+.welcome {
+  display: flex;
+  margin: 32px 0;
+}
+
+.welcome .centered {
+  width: 100%;
+}
+
+.welcome .left:first-child {
+  width: 35%
+}
+
+.welcome .left {
+  margin: 0 16px;
+  text-align: left;
+}
+
+.big-numbers {
+  margin: 50px 50px 32px 50px;
+}
+
+.big-numbers div {
+  display: flex;
+  flex-flow: row;
+  margin: 0 16px;
+  width: 100%;
+}
+
+.big-numbers div:first-child :not(.shiny-text-output) :not(p){
+  background: #EE6F7E;
+  border-bottom: 10px solid #54514E;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.big-numbers .shiny-text-output {
+  font-family: 'Courier Prime';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 50px;
+  text-align: center;
+  padding: 8px 8px;
+  display: table-cell;
+  color: #F8F8F8;
+}
+
+.big-numbers div p {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 29px;
+  text-align: center;
+  color: #605A52;
+  margin: 0 auto;
+}
+
+.home-graph {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-box {
+  height: 20%;
+  display: flex;
+  padding: 8px;
+}
+
+h2 {
+  font-family: 'Courier Prime';
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+}
+
+.input-box div {
+  padding: 0 4px;
+  flex-grow: 1;
+}
+
+#drop_off {
+  height: 200px;
+}
+
+.product-selector {
+  display: inline-flex;
+  margin: 32px auto;
+  flex-wrap: wrap;
+}
+
+.product-selector button {
+  font-family: 'Courier Prime';
+  color: #F8F8F8;
+  flex-grow: 1;
+  background: #40B2EC;
+  border-bottom: 10px solid #54514E;
+  border-radius: 15px;
+  margin: 4px;
+}
+
+.product-selector button:hover {
+  background: #6A76DF;
+  border-bottom: 10px solid #54514E;
+}
+
+.product-selector button:focus {
+  background: #EDAF4F;
+  color: #F8F8F8;
+  border: 0;
+  border-bottom: 10px solid #54514E;
+}
+
+.chart-selector {
+  display: flex;
+  flex-direction: column;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+}
+
+.chart-selector div {
+  width: 100%;
+  flex-grow: 1;
+  padding: 0 4px;
+  margin-bottom: 8px;
+}
+
+.chart-section div div{
+  display: flex;
+  width: 100%
+}
+
+.chart-section div div div{
+  flex-direction: column;
+  column-gap: 4px;
+  margin-bottom: 8px;
+  flex-grow: 1;
+}
+
+.pct-player {
+  text-align: left;
+  position: absolute;
+}
+
+#pct_player {
+  font-family: 'Courier Prime';
+  font-weight: 700;
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+#pie_chart_tl {
+  padding-top: 48px;
+}
+
+.chart-selector .irs {
+  font-family: "Ubuntu";
+}
+
+.chart-selector .irs-from {
+  background: #40B2EC;
+}
+
+.chart-selector .irs-to {
+  background: #40B2EC;
+}
+
+.chart-selector .irs-bar {
+  background: #40B2EC;
+}
+
+#map {
+  border-bottom: 10px solid #54514E;
+  border-radius: 15px;
+  margin: 36px auto;
+}
+
+#map_chart :not(#country_name) div {
+  display: flex;
+  width: 100%
+}
+
+#map_chart div div {
+  flex-direction: column;
+  width: 100%;
+  column-gap: 4px;
+  margin-bottom: 8px;
+  flex-grow: 1;
+}
+
+#country_name {
+  font-family: 'Courier Prime';
+  font-weight: 400;
+  font-size: 36px;
+  margin-top: 16px;
+  color: #54514E;
+}
+
+#table_top table {
+  height: 250px;
+  border-collapse: unset;
+  margin-bottom: 0;
+}
+
+#table_top th:first-child {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+#table_top th:last-child {
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+#table_top th {
+  background: #4BC2B0;
+  color: #F8F8F8;
+  border-bottom: 10px solid #54514E;
+}
+
+#table_top thead {
+  height: 20%;
+}
+
+#map_chart h2:first-child {
+  margin-bottom: 20px;
+}
+
+.interactive-area {
+  display: flex;
+  column-gap: 16px;
+}
+
+.controls {
+  width: 30%;
+}
+
+.var_filters {
+  background: #EDAF4F;
+  border-bottom: 10px solid #54514E;
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.var_filters div div {
+  width: 100%;
+  border-radius: 15px;
+}
+
+#gen_chart {
+  font-family: 'Courier Prime';
+  width: 100%;
+  background: #EDAF4F;
+  border-bottom: 10px solid #54514E;
+  border-radius: 15px;
+  margin-top: 16px;
+}
+
+#gen_table {
+  font-family: 'Courier Prime';
+  width: 100%;
+  background: #EDAF4F;
+  border-bottom: 10px solid #54514E;
+  border-radius: 15px;
+  margin-top: 16px;
+}
+
+#gen_chart_table {
+  flex-grow: 1;
+  border-radius: 15px;
+  overflow: hidden;  
+}
+
+#gen_chart_table thead {
+  background: #EDAF4F;
+}
+
+.dropdown-toggle {
+  border-radius: 15px;
+}
+
+.controls h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.dataTables_scroll {
+  border-radius: 15px;
+  border-bottom: 10px solid #54514E;
+  overflow: hidden;
+}
+
+.summary {
+  display: flex;
+}
+
+.summary div {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.summary div div {
+  font-family: 'Courier Prime';
+  font-weight: 700;
+  font-size: 24px;
+  margin: 0;
+  color: #54514E;
+}
+
+.footer {
+  margin: 50px auto;
+}
