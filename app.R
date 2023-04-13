@@ -1,4 +1,3 @@
-# This app was inspired by: https://shiny.rstudio.com/gallery/real-estate-investment.html
 library(shiny)
 library(tidyverse)
 library(data.table)
@@ -76,7 +75,6 @@ server <- function(input, output, session) {
 
   # Third page
   output$map <- renderLeaflet({render_map()})
-  # Ref: https://stackoverflow.com/questions/28938642/marker-mouse-click-event-in-r-leaflet-for-shiny
   observe({
     click <- input$map_marker_click
     if (is.null(click)) return()
